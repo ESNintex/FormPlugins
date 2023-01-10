@@ -2286,7 +2286,7 @@ let NintexSampleTextfield = _decorate([e$4('nintex-sample-textfield')], function
       value: function getMetaConfig() {
         // plugin contract information
         return {
-          controlName: 'Material Text field',
+          controlName: 'Material-Text-field',
           fallbackDisableSubmit: false,
           iconUrl: 'one-line-text',
           version: '1',
