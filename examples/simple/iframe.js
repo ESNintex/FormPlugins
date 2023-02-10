@@ -66,6 +66,7 @@ export class SampleIframe extends LitElement {
                     allow="geolocation *; microphone; camera"
                     title=${this.title}
                     src=${this.src}
+                    height=${this.height}
             ></iframe>`;
     }
 }
