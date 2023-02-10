@@ -51,7 +51,7 @@ export class SampleIframe extends LitElement {
         name: 'Hello',
         title: 'Hello',
         src: 'https://www.wikipedia.org/',
-        height: '100%'
+        height: '1000px'
     }
 
     // Render the UI as a function of component state
