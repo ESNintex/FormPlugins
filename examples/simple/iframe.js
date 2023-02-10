@@ -51,7 +51,8 @@ export class SampleIframe extends LitElement {
         name: 'Hello',
         title: 'Hello',
         src: 'https://www.wikipedia.org/',
-        height: '1000px'
+        height: '1000px',
+        wordAddress: 'pretty.needed.chill'
     }
 
     // Render the UI as a function of component state
@@ -65,7 +66,7 @@ export class SampleIframe extends LitElement {
                     name=${this.name}
                     allow="geolocation *; microphone; camera"
                     title=${this.title}
-                    src=${this.src}
+                    src="https://what3words.com/${this.wordAddress}"
                     height=${this.height}
             ></iframe>`;
     }
