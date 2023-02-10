@@ -37,6 +37,11 @@ export class SampleIframe extends LitElement {
                     type: 'string',
                     title: 'Height',
                     description: 'Height of the component',
+                },
+                wordAddress: {
+                    type: 'string',
+                    title: 'What3Words',
+                    description: '3 Word address',
                 }
             },
             standardProperties: {
