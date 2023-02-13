@@ -21,7 +21,7 @@ export class SampleIframe extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'W3WsMap-Map3ww',
+            controlName: 'W3W Map',
             fallbackDisableSubmit: false,
             description: 'IFrame component which can render url view with the frame',
             iconUrl: "one-line-text",
@@ -78,5 +78,5 @@ export class SampleIframe extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'w3wmap-iframe-new-name';
+const elementName = 'What3Words-map-iframe';
 customElements.define(elementName, SampleIframe);
