@@ -53,8 +53,8 @@ export class SampleIframe extends LitElement {
     }
 
     static properties = {
-        name: 'Hello',
-        title: 'Hello',
+        name: 'W3w',
+        title: 'W3w',
         src: 'https://www.wikipedia.org/',
         height: '1000px',
         wordAddress: 'pretty.needed.chill'
