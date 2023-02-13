@@ -21,7 +21,7 @@ export class SampleIframe extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'IFrame-new',
+            controlName: 'What3Words-Map',
             fallbackDisableSubmit: false,
             description: 'IFrame component which can render url view with the frame',
             iconUrl: "one-line-text",
