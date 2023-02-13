@@ -40,9 +40,7 @@ export class SampleIframe extends LitElement {
                 }
             },
             standardProperties: {
-                readOnly: true,
-                required: true,
-                description: true,
+                description: true
             }
         };
     }
@@ -60,7 +58,7 @@ export class SampleIframe extends LitElement {
             <iframe
                     class="frame"
                     style=${styleMap(styles)}
-                    allow="geolocation *; microphone; camera"
+                    allow="geolocation *"
                     src="https://what3words.com/${this.wordAddress}"
                     height=${this.height}
             ></iframe>`;
