@@ -71,5 +71,5 @@ export class SampleIframe extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'W3WMap';
+const elementName = 'W3WMap-iframe';
 customElements.define(elementName, SampleIframe);
