@@ -48,8 +48,6 @@ export class SampleIframe extends LitElement {
     }
 
     static properties = {
-        name: 'W3w',
-        title: 'W3w',
         height: '1000px',
         wordAddress: 'pretty.needed.chill'
     }
@@ -62,9 +60,7 @@ export class SampleIframe extends LitElement {
             <iframe
                     class="frame"
                     style=${styleMap(styles)}
-                    name=${this.name}
                     allow="geolocation *; microphone; camera"
-                    title=${this.title}
                     src="https://what3words.com/${this.wordAddress}"
                     height=${this.height}
             ></iframe>`;
