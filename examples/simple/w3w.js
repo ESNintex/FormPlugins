@@ -8,6 +8,7 @@ export class SampleIframe extends LitElement {
         width: 100%;
         display: block;
       }
+
       .frame {
         display: inline-block;
         height: 100%;
@@ -20,13 +21,18 @@ export class SampleIframe extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'What3Words Map',
+            controlName: 'IFrame-new',
             fallbackDisableSubmit: false,
-            description: 'What3Words map component',
+            description: 'IFrame component which can render url view with the frame',
             iconUrl: "one-line-text",
             groupName: 'Visual',
             version: '1.3',
             properties: {
+                src: {
+                    type: 'string',
+                    title: 'Source URL',
+                    description: 'URL of the iframe, please note many sites block been rendered in iframes'
+                },
                 height: {
                     type: 'string',
                     title: 'Height',
@@ -40,6 +46,7 @@ export class SampleIframe extends LitElement {
             },
             standardProperties: {
                 readOnly: true,
+                required: true,
                 description: true,
             }
         };
@@ -59,7 +66,7 @@ export class SampleIframe extends LitElement {
 
         return html`
             <iframe
-                  class="frame"
+                    class="frame"
                     style=${styleMap(styles)}
                     name=${this.name}
                     allow="geolocation *; microphone; camera"
@@ -71,5 +78,5 @@ export class SampleIframe extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'W3WMap-iframe';
+const elementName = 'w3wmap-iframe';
 customElements.define(elementName, SampleIframe);
