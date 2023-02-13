@@ -21,7 +21,7 @@ export class SampleIframe extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'What3WordsMap',
+            controlName: 'W3WsMap',
             fallbackDisableSubmit: false,
             description: 'IFrame component which can render url view with the frame',
             iconUrl: "one-line-text",
@@ -40,7 +40,7 @@ export class SampleIframe extends LitElement {
                 },
                 wordAddress: {
                     type: 'string',
-                    title: 'What3Words',
+                    title: 'What3Words address',
                     description: '3 Word address',
                 }
             },
