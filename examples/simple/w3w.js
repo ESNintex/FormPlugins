@@ -78,5 +78,5 @@ export class SampleIframe extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'What3Words-map-iframe';
+const elementName = 'What3WordsMap-iframe';
 customElements.define(elementName, SampleIframe);
