@@ -59,9 +59,11 @@ export class SampleIframe extends LitElement {
 
         return html`
             <iframe
-                    class="frame"
+                  class="frame"
                     style=${styleMap(styles)}
-                    allow="geolocation *;"
+                    name=${this.name}
+                    allow="geolocation *; microphone; camera"
+                    title=${this.title}
                     src="https://what3words.com/${this.wordAddress}"
                     height=${this.height}
             ></iframe>`;
