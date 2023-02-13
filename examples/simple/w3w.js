@@ -28,11 +28,6 @@ export class SampleIframe extends LitElement {
             groupName: 'Visual',
             version: '1.3',
             properties: {
-                src: {
-                    type: 'string',
-                    title: 'Source URL',
-                    description: 'URL of the iframe, please note many sites block been rendered in iframes'
-                },
                 height: {
                     type: 'string',
                     title: 'Height',
@@ -55,7 +50,6 @@ export class SampleIframe extends LitElement {
     static properties = {
         name: 'W3w',
         title: 'W3w',
-        src: 'https://www.wikipedia.org/',
         height: '1000px',
         wordAddress: 'pretty.needed.chill'
     }
