@@ -32,11 +32,13 @@ export class SampleIframe extends LitElement {
                     type: 'string',
                     title: 'Height',
                     description: 'Height of the component',
+                    defaultValue: '1000px'
                 },
                 wordAddress: {
                     type: 'string',
                     title: 'What3Words address',
                     description: '3 Word address',
+                    defaultValue: 'pretty.needed.chill'
                 }
             },
             standardProperties: {
