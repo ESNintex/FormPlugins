@@ -12,7 +12,7 @@ class OneDialog extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'OneDialog',
+            controlName: 'One-Dialog',
             fallbackDisableSubmit: false,
             description: 'Modal frame',
             iconUrl: "one-line-text",
@@ -142,5 +142,5 @@ button.addEventListener('click', () => {
   document.querySelector('one-dialog').open = true;
 });
 
-const elementName = 'OneDialog';
+const elementName = 'One-Dialog';
 customElements.define(elementName, OneDialog);
