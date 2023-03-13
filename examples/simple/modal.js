@@ -64,7 +64,16 @@ class OneDialog extends LitElement {
   }
   
   render() {
-    return html`
+    return html`<one-dialog >
+  <span slot="heading">Hello world</span>
+  <div>
+    <p>Lorem ipsum dolor amet tilde bicycle rights affogato brooklyn. Whatever lomo subway tile sriracha gastropub edison bulb shabby chic tumeric meditation mustache raw denim.</p>
+    
+    <p>reegan ugh bespoke you probably haven't heard of them godard crucifix pabst. Selvage biodiesel vice copper mug lumbersexual cred plaid. Skateboard pitchfork listicle fashion axe. Chillwave viral butcher vegan wolf.</p>
+  </div>
+</one-dialog>
+
+<button id="launch-dialog">Launch dialog</button>
     <div class="wrapper ${this.open ? 'open' : ''}" aria-hidden="${!this.open}">
     <div class="overlay" @click="${this.close}"></div>
       <div class="dialog" role="dialog" aria-labelledby="title" aria-describedby="content">
@@ -106,6 +115,23 @@ class OneDialog extends LitElement {
         this.close();   
     }
   }
+  static getMetaConfig() {
+        // plugin contract information
+        return {
+            controlName: 'modal',
+            fallbackDisableSubmit: false,
+            description: 'Modal frame',
+            iconUrl: "one-line-text",
+            groupName: 'Visual',
+            version: '1.3',
+            properties: {
+            },
+            standardProperties: {
+                description: true
+            }
+        };
+    }
+  
 }
 
 customElements.define('one-dialog', OneDialog);
@@ -114,3 +140,6 @@ const button = document.getElementById('launch-dialog');
 button.addEventListener('click', () => {
   document.querySelector('one-dialog').open = true;
 });
+
+const elementName = 'modal';
+customElements.define(elementName, OneDialog);
