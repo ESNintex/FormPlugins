@@ -9,6 +9,23 @@ class OneDialog extends LitElement {
     };
   }
   
+    static getMetaConfig() {
+        // plugin contract information
+        return {
+            controlName: 'OneDialog',
+            fallbackDisableSubmit: false,
+            description: 'Modal frame',
+            iconUrl: "one-line-text",
+            groupName: 'Visual',
+            version: '1.3',
+            properties: {
+            },
+            standardProperties: {
+                description: true
+            }
+        };
+    }
+  
   static get styles() {
     return [css`.wrapper {
         opacity: 0;
@@ -115,22 +132,6 @@ class OneDialog extends LitElement {
         this.close();   
     }
   }
-  static getMetaConfig() {
-        // plugin contract information
-        return {
-            controlName: 'OneDialog',
-            fallbackDisableSubmit: false,
-            description: 'Modal frame',
-            iconUrl: "one-line-text",
-            groupName: 'Visual',
-            version: '1.3',
-            properties: {
-            },
-            standardProperties: {
-                description: true
-            }
-        };
-    }
   
 }
 
