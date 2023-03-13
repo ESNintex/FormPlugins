@@ -103,6 +103,11 @@ class OneDialog extends LitElement {
     </div>`;
   }
   
+  const button = document.getElementById('launch-dialog');
+button.addEventListener('click', () => {
+  document.querySelector('one-dialog').open = true;
+});
+  
   get open() { return this[privateOpen]; }
   set open(isOpen) {
     this[privateOpen] = isOpen;
@@ -137,10 +142,7 @@ class OneDialog extends LitElement {
 
 customElements.define('one-dialog', OneDialog);
 
-const button = document.getElementById('launch-dialog');
-button.addEventListener('click', () => {
-  document.querySelector('one-dialog').open = true;
-});
+
 
 const elementName = 'One-Dialog';
 customElements.define(elementName, OneDialog);
