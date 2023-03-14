@@ -9,22 +9,7 @@ class OneDialog extends LitElement {
     };
   }
   
-    static getMetaConfig() {
-        // plugin contract information
-        return {
-            controlName: 'One-Dialog',
-            fallbackDisableSubmit: false,
-            description: 'Modal frame',
-            iconUrl: "one-line-text",
-            groupName: 'Visual',
-            version: '1.3',
-            properties: {
-            },
-            standardProperties: {
-                description: true
-            }
-        };
-    }
+    
   
   static get styles() {
     return [css`.wrapper {
@@ -124,10 +109,26 @@ class OneDialog extends LitElement {
     }
   }
   
+  static getMetaConfig() {
+        // plugin contract information
+        return {
+            controlName: 'OneDialog',
+            fallbackDisableSubmit: false,
+            description: 'Modal frame',
+            iconUrl: "one-line-text",
+            groupName: 'Visual',
+            version: '1.3',
+            properties: {
+            },
+            standardProperties: {
+                description: true
+            }
+        };
+    }
 }
 
 
-const elementName = 'One-Dialog';
+const elementName = 'OneDialog';
 customElements.define(elementName, OneDialog);
 
  const button = document.getElementById('launch-dialog');
