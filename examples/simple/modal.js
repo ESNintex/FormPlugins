@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'https://unpkg.com/@polymer/lit-element@la
 
 const privateOpen = Symbol('open');
 
-class OneDialog extends LitElement {
+class Modal extends LitElement {
   static get properties() {
     return { 
       open: { type: Boolean, attribute: 'open', reflect: true }
@@ -112,7 +112,7 @@ class OneDialog extends LitElement {
   static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'OneDialog',
+            controlName: 'Modal',
             fallbackDisableSubmit: false,
             description: 'Modal frame',
             iconUrl: "one-line-text",
@@ -128,7 +128,7 @@ class OneDialog extends LitElement {
 }
 
 
-const elementName = 'OneDialog';
+const elementName = 'Modal';
 customElements.define(elementName, OneDialog);
 
  const button = document.getElementById('launch-dialog');
