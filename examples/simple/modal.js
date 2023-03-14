@@ -81,16 +81,7 @@ class OneDialog extends LitElement {
   }
   
   render() {
-    return html`<one-dialog >
-  <span slot="heading">Hello world</span>
-  <div>
-    <p>Lorem ipsum dolor amet tilde bicycle rights affogato brooklyn. Whatever lomo subway tile sriracha gastropub edison bulb shabby chic tumeric meditation mustache raw denim.</p>
-    
-    <p>reegan ugh bespoke you probably haven't heard of them godard crucifix pabst. Selvage biodiesel vice copper mug lumbersexual cred plaid. Skateboard pitchfork listicle fashion axe. Chillwave viral butcher vegan wolf.</p>
-  </div>
-</one-dialog>
-
-<button id="launch-dialog">Launch dialog</button>
+    return html`<button id="launch-dialog">Launch dialog</button>
     <div class="wrapper ${this.open ? 'open' : ''}" aria-hidden="${!this.open}">
     <div class="overlay" @click="${this.close}"></div>
       <div class="dialog" role="dialog" aria-labelledby="title" aria-describedby="content">
@@ -134,8 +125,6 @@ class OneDialog extends LitElement {
   }
   
 }
-
-customElements.define('one-dialog', OneDialog);
 
 
 const elementName = 'One-Dialog';
