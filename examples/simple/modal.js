@@ -129,7 +129,7 @@ class Modal extends LitElement {
 
 
 const elementName = 'Modal';
-customElements.define(elementName, OneDialog);
+customElements.define(elementName, Modal);
 
  const button = document.getElementById('launch-dialog');
 button.addEventListener('click', () => {
