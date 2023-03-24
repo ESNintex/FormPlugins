@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'https://unpkg.com/@polymer/lit-element@la
 
 const privateOpen = Symbol('open');
 
-class Modal extends LitElement {
+class ModalView extends LitElement {
   static get properties() {
     return { 
       open: { type: Boolean, attribute: 'open', reflect: true }
@@ -128,7 +128,7 @@ class Modal extends LitElement {
 }
 
 
-const elementName = 'modalview';
+const elementName = 'modal-view';
 customElements.define(elementName, Modal);
 
  const button = document.getElementById('launch-dialog');
