@@ -17,6 +17,10 @@ export class Modal extends LitElement {
         border: none;
       }
     `;
+    
+    constructor() {
+        super();
+    }
 
     static getMetaConfig() {
         // plugin contract information
