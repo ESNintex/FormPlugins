@@ -131,8 +131,8 @@ class ModalView extends LitElement {
 const elementName = 'modal-view';
 customElements.define(elementName, Modal);
 
- const button = document.getElementById('launch-dialog');
+ /*const button = document.getElementById('launch-dialog');
 button.addEventListener('click', () => {
   document.querySelector('one-dialog').open = true;
-});
+});*/
 
