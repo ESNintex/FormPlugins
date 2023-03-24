@@ -128,7 +128,7 @@ class Modal extends LitElement {
 }
 
 
-const elementName = 'Modal-View';
+const elementName = 'modalview';
 customElements.define(elementName, Modal);
 
  const button = document.getElementById('launch-dialog');
