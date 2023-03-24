@@ -73,4 +73,4 @@ export class Modal extends LitElement {
 
 // registering the web component.
 const elementName = 'modal';
-customElements.define(elementName, SampleIframe);
+customElements.define(elementName, Modal);
