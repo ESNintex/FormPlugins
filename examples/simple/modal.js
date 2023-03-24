@@ -1,6 +1,6 @@
 import {css, html, LitElement, styleMap} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 
-export class Modal extends LitElement {
+export class ModalView extends LitElement {
     // Define scoped styles right with your component, in plain CSS
     static styles = css`
       :host {
@@ -25,7 +25,7 @@ export class Modal extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'Modal',
+            controlName: 'Modal View',
             fallbackDisableSubmit: false,
             description: 'IFrame component which can render url view with the frame',
             iconUrl: "one-line-text",
@@ -72,5 +72,5 @@ export class Modal extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'modal';
-customElements.define(elementName, Modal);
+const elementName = 'modal-view';
+customElements.define(elementName, ModalView);
