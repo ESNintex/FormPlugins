@@ -112,7 +112,7 @@ class ModalView extends LitElement {
   static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'Modal',
+            controlName: 'Modal View',
             fallbackDisableSubmit: false,
             description: 'Modal frame',
             iconUrl: "one-line-text",
