@@ -66,7 +66,7 @@ class ModalView extends LitElement {
   }
   
   render() {
-    return html`<button id="launch-dialog">Launch dialog</button>
+    return html`<button onclick="() => {document.querySelector('one-dialog').open = true;}" id="launch-dialog">Launch dialog</button>
     <div class="wrapper ${this.open ? 'open' : ''}" aria-hidden="${!this.open}">
     <div class="overlay" @click="${this.close}"></div>
       <div class="dialog" role="dialog" aria-labelledby="title" aria-describedby="content">
@@ -131,8 +131,8 @@ class ModalView extends LitElement {
 const elementName = 'modal-view';
 customElements.define(elementName, ModalView);
 
- const button = document.getElementById('launch-dialog');
+/* const button = document.getElementById('launch-dialog');
 button.addEventListener('click', () => {
   document.querySelector('one-dialog').open = true;
-});
+});*/
 
