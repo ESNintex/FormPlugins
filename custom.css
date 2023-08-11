@@ -152,10 +152,11 @@ ntx-simple-address > input::-webkit-input-placeholder {
 
 
 /*#endregion*/
-/*#region : Submit Form */
+/*#region : Submit Form 
 ntx-message-page#nx-message-page h1 {
     color: rgba(255,255,255,0%);
 }
+*/
 /*
 ntx-message-page#nx-message-page h1:before {
     content: 'Incorporação submetidas';
@@ -168,7 +169,7 @@ ntx-message-page#nx-message-page button:before {
     color: #d90011;
     position: absolute;
 }
-*/
+
 ntx-message-page#nx-message-page button {
     color: #FFFFFF;
     width: 350px;
@@ -184,6 +185,7 @@ ntx-message-page#nx-message-page button:hover:before{
 .nx-message-content.nx-form.form {
     background: rgba(255, 255, 255, .7);
 }
+*/
 /*#endregion*/
 
 /*#region : Check Radio as Button */
