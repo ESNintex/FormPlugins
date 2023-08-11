@@ -101,9 +101,9 @@ label.btn.nx-theme-button-2.nx-upload-button:after {
     padding: 10px;
 }
 
-ntx-file-upload.ng-star-inserted .nx-upload-action-bar div:before {
+/*ntx-file-upload.ng-star-inserted .nx-upload-action-bar div:before {
     content: 'Arraste os arquivos aqui ou';
-}
+}*/
 .nx-file-upload-control .drop-container .nx-upload-button {
     margin-bottom: 5%;
 }
@@ -131,12 +131,12 @@ div.ntx-custom-profile > header.nx-panel-header.nx-group-control-header + div.nx
     font-weight: bold;
 }
 /*#endregion*/
-/*#region : Address */
+/*#region : Address 
 ntx-simple-address > input {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='25' y='20' fill='gray' font-size='14'>Entrer une addresse</text></svg>");
   background-repeat: no-repeat;
 }
-
+*/
 /* Hides our fake placeholder on input focus */
 ntx-simple-address > input:focus,
 ntx-simple-address > input:not(:placeholder-shown) {
