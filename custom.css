@@ -40,11 +40,11 @@
 .nx-signature-placeholder-canvas-border.nx-signature-border.ng-star-inserted h5 {
     display: none;
 }
-
+/*
 .nx-signature-placeholder-canvas-border.nx-signature-border.ng-star-inserted::after {
     content: 'Clique para assinar';
 }
-
+*/
 ntx-signature ntx-label {
     display: none;
 }
@@ -156,7 +156,7 @@ ntx-simple-address > input::-webkit-input-placeholder {
 ntx-message-page#nx-message-page h1 {
     color: rgba(255,255,255,0%);
 }
-
+/*
 ntx-message-page#nx-message-page h1:before {
     content: 'Incorporação submetidas';
     color: #008000;
@@ -168,7 +168,7 @@ ntx-message-page#nx-message-page button:before {
     color: #d90011;
     position: absolute;
 }
-
+*/
 ntx-message-page#nx-message-page button {
     color: #FFFFFF;
     width: 350px;
