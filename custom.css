@@ -83,7 +83,7 @@ label.btn.nx-theme-button-2.nx-upload-button {
     visibility: hidden;
     position: relative;
 }
-
+/*
 label.btn.nx-theme-button-2.nx-upload-button:after {
     position: absolute;
     top: 0;
@@ -101,7 +101,7 @@ label.btn.nx-theme-button-2.nx-upload-button:after {
     padding: 10px;
 }
 
-/*ntx-file-upload.ng-star-inserted .nx-upload-action-bar div:before {
+ntx-file-upload.ng-star-inserted .nx-upload-action-bar div:before {
     content: 'Arraste os arquivos aqui ou';
 }*/
 .nx-file-upload-control .drop-container .nx-upload-button {
